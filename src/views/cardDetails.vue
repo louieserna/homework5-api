@@ -26,7 +26,7 @@ const route =useRoute()
             <h1 class="text-2xl p-5">{{ currentEmployee.userName }} @southtexascollege.edu</h1>
             <h1 class="text-2xl p-5">{{ currentEmployee.quote }}</h1>
 
-            <img class="p-8" :src="faker.image.urlLoremFlickr({category: 'cat'})" />
+            <img class="h-24 w-240 object-cover rounded-md" :src="faker.image.urlLoremFlickr({ width: 240, height: 240, category: 'cat' })" />
 
         </div>
  </main>
